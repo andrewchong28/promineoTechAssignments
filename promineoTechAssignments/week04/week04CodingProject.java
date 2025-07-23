@@ -131,66 +131,66 @@ public class week04CodingProject {
 		// TODO Auto-generated method stub
 		 
 		
-/*		1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+/*1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
-		a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
+a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
 
-		b. Create a new array of int called ages2 with 9 elements (ages2 will be longer than the ages array, and have more elements).  
+b. Create a new array of int called ages2 with 9 elements (ages2 will be longer than the ages array, and have more elements).  
 
-		i. Make sure that there are 9 elements of type int in this new array.  
+i. Make sure that there are 9 elements of type int in this new array.  
 
-		ii. Repeat the subtraction from Step 1.a. (Programmatically subtract the value of the first element in the new array ages2 from the last element of ages2). 
+ii. Repeat the subtraction from Step 1.a. (Programmatically subtract the value of the first element in the new array ages2 from the last element of ages2). 
 
-		iii. Show that using the index values for the elements is dynamic (works for arrays of different lengths). 
+iii. Show that using the index values for the elements is dynamic (works for arrays of different lengths). 
 
-		c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.*/
+c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.*/
 		
 /*-------------------------ages array----------------------------*/
 		   System.out.println("1a.)ages array: ");
 		   
-		//1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-		   int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+//1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+	int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 		   
-		       // loop to print first and last element
-			   for (int i = 0; i < ages.length; i++) {// for loop - interate by 1 if i is less than length of array (8 objects)
-				    if (i == 0) {                      // if i equals position 0 then change variable firstElementinArray to that value
-				    	System.out.println("    first element: " + (ages[i])); 
-				    }
-				    if (i == ages.length -1) { // if i equals last position (array length 8 - 1 = position 7)  then change variable lastElementinArray to that value
-				    	System.out.println("    last element: " + (ages[i]));
-				    }	     
-			   }
+	// loop to print first and last element
+	for (int i = 0; i < ages.length; i++) {// for loop - interate by 1 if i is less than length of array (8 objects)
+	if (i == 0) {                      // if i equals position 0 then change variable firstElementinArray to that value
+	System.out.println("    first element: " + (ages[i])); 
+		}
+		if (i == ages.length -1) { // if i equals last position (array length 8 - 1 = position 7)  then change variable lastElementinArray to that value
+		System.out.println("    last element: " + (ages[i]));
+		}	     
+	 }
 			
 			   
-			//a. Programmatically subtract the value of the first element in the array from the value in the last element of the array
-			//iii. Show that using the index values for the elements is dynamic - Refer to method subtractFirstAndLastElementinArray
-			   	   //Method: using method subtractFirstAndLastElementinArray
-			   		System.out.println("    last element - first element = " + subtractFirstAndLastElementInArray(ages));
-			   		System.out.println("    elements in array: " + ages.length);
+	//a. Programmatically subtract the value of the first element in the array from the value in the last element of the array
+	//iii. Show that using the index values for the elements is dynamic - Refer to method subtractFirstAndLastElementinArray
+	//Method: using method subtractFirstAndLastElementinArray
+	System.out.println("    last element - first element = " + subtractFirstAndLastElementInArray(ages));
+	System.out.println("    elements in array: " + ages.length);
 	                 	 
 /*-------------------------ages2 array----------------------------*/
-			   System.out.println("1b.) ages2 array: ");
+	System.out.println("1b.) ages2 array: ");
 			   
-		   // b. Create a new array of int called ages2 with 9 elements
-			   int[] ages2 ={15, 723, 4, 250, 98, 45, 0, 333, 5000};
+	 // b. Create a new array of int called ages2 with 9 elements
+	 int[] ages2 ={15, 723, 4, 250, 98, 45, 0, 333, 5000};
 			   
 			      
-				   for (int i = 0; i < ages2.length; i++) {// for loop - interate by 1 if i is less than length of array(9 elements)
-					    if (i == 0) {                      // if i equals position 0 then change variable firstElementinArray to that value
-					    	System.out.println("    first element: " + (ages2[i]));
-					    }
-					    if (i == ages2.length -1) { // if i equals last position (array length 9 - 1 = position 8)  then change variable lastElementinArray to that value
-					    	System.out.println("    last element: " + (ages2[i]));
-					    }	     
-				   }
+	for (int i = 0; i < ages2.length; i++) {// for loop - interate by 1 if i is less than length of array(9 elements)
+	if (i == 0) {   // if i equals position 0 then change variable firstElementinArray to that value
+	System.out.println("    first element: " + (ages2[i]));
+	}
+		if (i == ages2.length -1) { // if i equals last position (array length 9 - 1 = position 8)  then change variable lastElementinArray to that value
+		System.out.println("    last element: " + (ages2[i]));
+		 }	     
+	}
 	             
 				   
-				//ii. Repeat the subtraction from Step 1 -  Refer to method subtractFirstAndLastElementinArray
-				//iii. Show that using the index values for the elements is dynamic - Refer to method subtractFirstAndLastElementinArray
+	//ii. Repeat the subtraction from Step 1 -  Refer to method subtractFirstAndLastElementinArray
+	//iii. Show that using the index values for the elements is dynamic - Refer to method subtractFirstAndLastElementinArray
 				   
-				//Method: using method subtractFirstAndLastElementinArray   
-				   	System.out.println("    last element - first element = " + subtractFirstAndLastElementInArray(ages2));	   
-				   	System.out.println("    elements in array: " + ages2.length);
+	//Method: using method subtractFirstAndLastElementinArray   
+	System.out.println("    last element - first element = " + subtractFirstAndLastElementInArray(ages2));	   
+	System.out.println("    elements in array: " + ages2.length);
 				   	
 				   	
 		 /*
@@ -214,116 +214,112 @@ public class week04CodingProject {
 		 */
 		    	
 		  
-	   //2. Create an array of String called names that contains the following values:
-          String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+//2. Create an array of String called names that contains the following values:
+        String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
           
-          //Method sum string lengths in string array:
-          System.out.println("Sum of name lengths check: " + sumStringLengthsInArray(names));
+        //Method sum string lengths in string array:
+        System.out.println("Sum of name lengths check: " + sumStringLengthsInArray(names));
 
-       //a. Use a loop to iterate through the array and calculate the average number
-          double nameLengthTotal = 0; //double for average. created double variable to hold the value of the sum of the name lengths 
-          for(String name : names) {  // loops for each object in array names(6 objects)
+        //a. Use a loop to iterate through the array and calculate the average number
+        double nameLengthTotal = 0; //double for average. created double variable to hold the value of the sum of the name lengths 
+        for(String name : names) {  // loops for each object in array names(6 objects)
         	  nameLengthTotal += name.length();// on each iteration += adds the length of each name to the nameLenghtTotal variable  
-          }
+              }
 
           System.out.println("2a.)average number of letters per name: "+ nameLengthTotal + "/" + names.length + " = " + nameLengthTotal / names.length);
 				  
        //b. Use a loop to iterate through the array again and concatenate all the
-          String concatNames = " ";
-          for(String name : names) {  // loops for each object in array names(6 objects)
-        	  concatNames += name + " ";
-                                // on each iteration += adds the length of each name to the nameLenghtTotal variable  
-          }
-          System.out.println("2b.) loop and concat names with space: " + concatNames);
+         String concatNames = " ";
+        for(String name : names) {  // loops for each object in array names(6 objects)
+         concatNames += name + " "; // on each iteration += adds the length of each name to the nameLenghtTotal variable  
+         }
+         System.out.println("2b.) loop and concat names with space: " + concatNames);
          
            
 	 
-	 /* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array 
-	       and add the length of each name to the nameLengths array.*/
+ /* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array 
+       and add the length of each name to the nameLengths array.*/
           
-         System.out.println("5.) nameLengths array: "); 
+        System.out.println("5.) nameLengths array: "); 
           
-         int[] nameLengths = new int[names.length]; //new int array
+        int[] nameLengths = new int[names.length]; //new int array
          
-         for(int i = 0; i < names.length; i++ ) {// iterate by 1 if i < length of names array (6 objects)
-             nameLengths[i] = names[i].length(); // on each loop nameLength is filled with value of the name length in names array
-        	 }                                   // nameLengths[i] = names[i].length(); on loop 3 is nameLengths[2] =  names[2].length();
-                                                 // nameLength(2) at position 2 of array is filled with name length of position 2 of names array
+        for(int i = 0; i < names.length; i++ ) {// iterate by 1 if i < length of names array (6 objects)
+        nameLengths[i] = names[i].length(); // on each loop nameLength is filled with value of the name length in names array
+        }                                   // nameLengths[i] = names[i].length(); for example - on loop 3 is nameLengths[2] =  names[2].length();
+                                            // nameLength(2) at position 2 of array is filled with name length of position 2 of names array
          //Check values in nameLengths array
-         System.out.println("    name0 length = " + nameLengths[0] + " - " + names[0]);
-         System.out.println("    name1 length = " + nameLengths[1] + " - " + names[1]);
-         System.out.println("    name2 length = " + nameLengths[2] + " - " + names[2]);
-         System.out.println("    name3 length = " + nameLengths[3] + " - " + names[3]);
-         System.out.println("    name4 length = " + nameLengths[4] + " - " + names[4]);
-         System.out.println("    name5 length = " + nameLengths[5] + " - " + names[5]);
+               System.out.println("    name0 length = " + nameLengths[0] + " - " + names[0]);
+               System.out.println("    name1 length = " + nameLengths[1] + " - " + names[1]);
+               System.out.println("    name2 length = " + nameLengths[2] + " - " + names[2]);
+               System.out.println("    name3 length = " + nameLengths[3] + " - " + names[3]);
+               System.out.println("    name4 length = " + nameLengths[4] + " - " + names[4]);
+               System.out.println("    name5 length = " + nameLengths[5] + " - " + names[5]);
          
          
-	/* 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
-	      Print the result to the console.*/
+/* 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
+     Print the result to the console.*/
          
-         int nameLengthSum = 0;
-		  for (int i = 0; i < nameLengths.length; i++) {
-			  nameLengthSum += nameLengths[i];
-		  }
-		  System.out.println("6.) Sum of all elements in nameLengths array: " + nameLengthSum);
+        int nameLengthSum = 0;
+	for (int i = 0; i < nameLengths.length; i++) {
+	nameLengthSum += nameLengths[i];
+		 }
+	System.out.println("6.) Sum of all elements in nameLengths array: " + nameLengthSum);
 				
-	/*7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated 
+/*7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated 
 	     to itself n number of times. (i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”).*/
 		  
-		 String word = "pizza";
-		 int number = 3;
-		 System.out.println("7.) string concatenated to itself n number of times: " + stringConcatItself(word,number));
+	 String word = "pizza";
+	 int number = 3;
+	 System.out.println("7.) string concatenated to itself n number of times: " + stringConcatItself(word,number));
 			 
-	/*8. Write a method that takes two Strings, firstName and lastName, and returns a full name
-         (the full name should be the first and the last name as a String separated by a space).*/
+/*8. Write a method that takes two Strings, firstName and lastName, and returns a full name
+ (the full name should be the first and the last name as a String separated by a space).*/
 		 
-		 String firstName = "Caesar";
-		 String lastName = "Littles";
-		 String fullName = concatFirstLastName(firstName, lastName) ;
-		 System.out.println("8.) take two strings and return fullName: " +fullName);
+	String firstName = "Caesar";
+	String lastName = "Littles";
+	String fullName = concatFirstLastName(firstName, lastName) ;
+	System.out.println("8.) take two strings and return fullName: " +fullName);
 		 
 	 
-	/* 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.*/
+/* 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.*/
        
-         int arrayOfInt[] = {34, 2, 37, 1, 9, 12, -16, 23, 17};
+        int arrayOfInt[] = {34, 2, 37, 1, 9, 12, -16, 23, 17};
 
-         System.out.println("9.) return boolean if arrayOfInt total " + sumValuesInIntArray(arrayOfInt) + " > 100: " + ifSumOfArrayGreaterThan100(arrayOfInt)); 
+        System.out.println("9.) return boolean if arrayOfInt total " + sumValuesInIntArray(arrayOfInt) + " > 100: " + ifSumOfArrayGreaterThan100(arrayOfInt)); 
          
          
 		  
-    /* 10. Write a method that takes an array of double and returns the average of all the elements in the array.*/
+ /* 10. Write a method that takes an array of double and returns the average of all the elements in the array.*/
          double prices[] = {18.19, 25.02, 12.95, 9.99, 32.99, 14.99, 45.99, 36.42};
          
          System.out.println("10.) total of prices[] = " + sumValuesInDoubleArray(prices) + " and prices[] length = " + prices.length + ": average of prices = " + averageOfAllElementsInArray(prices));
 
-    /*11. Write a method that takes two arrays of double and returns true if the average of the elements 
+ /*11. Write a method that takes two arrays of double and returns true if the average of the elements 
       in the first array is greater than the average of the elements in the second array. */      
          double prices2[] = {86.10, 10.99,5.99, 22.11, 70.02};
          
          System.out.println("11.) average of prices[] = " +  averageOfAllElementsInArray(prices) + " and average of prices2[] = " +  averageOfAllElementsInArray(prices2) + ". Is prices > prices 2: " + isAverageOf1stArrayGreaterThan2ndArray(prices,prices2)); 
  
          
-   /* 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and  a double moneyInPocket, and returns 
+ /* 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and  a double moneyInPocket, and returns 
           true if it is hot outside and if moneyInPocket is greater than 10.50.*/
-          boolean isHotOutside = true;
-          double moneyInPocket = 15.00;
+         boolean isHotOutside = true;
+         double moneyInPocket = 15.00;
            
-          System.out.println("12.) " + willBuyDrink(isHotOutside,moneyInPocket));
+         System.out.println("12.) " + willBuyDrink(isHotOutside,moneyInPocket));
          
  
          
 
-   /* 13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.*/
+/* 13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.*/
           
-         //Method to check if today is Thursday and print messaging saying if I have class today or not.          
-         LocalDate today = LocalDate.now();                   // uses LocalDate data type and .now() method to get todays date
-         DayOfWeek dayOfWeek = today.getDayOfWeek();          // uses DayOfWeek data type and method .getDayOfWeek() from today variable
-         isItClassDay(dayOfWeek);// Call method and passing in dayOfWeek variable to method
+        //Method to check if today is Thursday and print messaging saying if I have class today or not.          
+        LocalDate today = LocalDate.now();                   // uses LocalDate data type and .now() method to get todays date
+        DayOfWeek dayOfWeek = today.getDayOfWeek();          // uses DayOfWeek data type and method .getDayOfWeek() from today variable
+        isItClassDay(dayOfWeek);// Call method and passing in dayOfWeek variable to method
    
-   
- 
-		
-			
+   			
 	}
 
 }
