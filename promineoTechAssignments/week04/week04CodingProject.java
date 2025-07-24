@@ -7,19 +7,19 @@ import java.time.DayOfWeek;
 public class week04CodingProject {
 	
 /*********************************************************Enter methods below*****************************************************/		
- //Method: subtract first and last element in array. //What is happening when method is called? ages[] array as example
-	public static int subtractFirstAndLastElementInArray(int[] array) {// return type in, parameter array. when method is called ages[] array is passed into parameter
-		 int firstElementInArray = 0; // Created variable to hold first element
-		 int lastElementInArray = 0;   // Created variable to hold last element             
-		   for (int i = 0; i < array.length; i++) {// for loop - interate by 1 if i is less than length of array length (8 objects)
-			    if (i == 0) {                      // if i equals position 0 then change variable firstElementinArray to that value
-			    	firstElementInArray = array[i]; // ages[0]: This happens on first iteraton
-			    }
-			    if (i == array.length -1) { // if i equals last position (array length 8 - 1 = position 7)  then change variable lastElementinArray to that value
-			    	lastElementInArray = array[i]; // ages[7]: This happens on last iteration
-			    }	     
-		   }
-		   return lastElementInArray - firstElementInArray; // when methods is called return the value of lastElementInArray minus firstElementInArray
+//Method: subtract first and last element in array. //What is happening when method is called? ages[] array as example
+  public static int subtractFirstAndLastElementInArray(int[] array) {// return type in, parameter array. when method is called ages[] array is passed into parameter
+	int firstElementInArray = 0; // Created variable to hold first element
+	int lastElementInArray = 0;   // Created variable to hold last element             
+	for (int i = 0; i < array.length; i++) {// for loop - interate by 1 if i is less than length of array length (8 objects)
+	      if (i == 0) {                      // if i equals position 0 then change variable firstElementinArray to that value
+	      firstElementInArray = array[i]; // ages[0]: This happens on first iteraton
+		}
+	      if (i == array.length -1) { // if i equals last position (array length 8 - 1 = position 7)  then change variable lastElementinArray to that value
+	      lastElementInArray = array[i]; // ages[7]: This happens on last iteration
+	        }	     
+	     }
+	      return lastElementInArray - firstElementInArray; // when methods is called return the value of lastElementInArray minus firstElementInArray
 	 }
 
 //Method: Calculates and returns the sum of all elements in an int array:
