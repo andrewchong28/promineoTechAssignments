@@ -64,14 +64,14 @@ public class week04CodingProject {
 	 
 /*8. Write a method that takes two Strings, firstName and lastName, and returns a full name*/	 
 	 
-	 public static String concatFirstLastName (String f, String l) {
-		     return f + " " + l ;
+	 public static String concatFirstLastName (String f, String l) {//method return type is string, parameters are string
+		     return f + " " + l ; // returns the concatenated strings of variables passed in to parameters
 	 }
 	 
 /* 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.*/	 
-     public static boolean ifSumOfArrayGreaterThan100 (int[] n) {//return type boolean, parameter int array
+     public static boolean ifSumOfArrayGreaterThan100 (int[] n) {//method return type boolean, parameter int array. when method is called array from main gets passed in 
     	 int sumN = 0; //variable to store the sum of elements of array passed in 
-    	 for (int numbers : n) {//enhanced for loop to iterate through elements in array( for numbers in n array)
+    	 for (int numbers : n) {//enhanced for loop to iterate through elements in array( for numbers in n[] array)
     		  sumN += numbers;  // on each iteration add current number to total(sumN)
     	 }
     	 if (sumN > 100) {      //if statement returns true if total is greater than 100
@@ -82,27 +82,27 @@ public class week04CodingProject {
      }
      
 /* 10. Write a method that takes an array of double and returns the average of all the elements in the array.*/
- public static double averageOfAllElementsInArray(double array[]) {
-       double sumOfElements = 0;
-       for(double values :  array) {
-    	   sumOfElements += values;
+ public static double averageOfAllElementsInArray(double array[]) { //method return type is double. parameter is double array.when method is called array from main gets passed in 
+       double sumOfElements = 0;// created variable to hold the sum of values
+       for(double values :  array) {//enhanced for loop to iterate through elements in array( for values in array[])
+    	   sumOfElements += values;// += will add values to sumOfElements on each loop
        }
-       return sumOfElements / array.length;
+       return sumOfElements / array.length;// returns the average from sumOfElements/ the length of the array[] passed in when method is called
  }
 	 
 
  /*11. Write a method that takes two arrays of double and returns true if the average of the elements 
  in the first array is greater than the average of the elements in the second array. */    
- public static boolean isAverageOf1stArrayGreaterThan2ndArray (double array1[], double array2[]) {
-       double sumArray1 = 0;
-       double sumArray2 = 0;
-       for(double values :  array1) {//loop through values in array1 
-    	   sumArray1 += values;      //add values to sumArray1
+ public static boolean isAverageOf1stArrayGreaterThan2ndArray (double array1[], double array2[]) {// method return type is boolean, parameters are double arrays
+       double sumArray1 = 0;// create variable to hold sum of array1
+       double sumArray2 = 0;// create variable to hold sum of array2
+       for(double values :  array1) {//enhanced for loop to iterate through values in array1 
+    	   sumArray1 += values;      //add values to variable sumArray1
        }
-       for(double values :  array2) {//loop through values in array2
-    	   sumArray2 += values;     //add values to sumArray2
+       for(double values :  array2) {//enhanced for loop to iterate through values in array2
+    	   sumArray2 += values;     //add values to variable sumArray2
        }
-       return (sumArray1 / array1.length) > (sumArray2 / array2.length); // returns 
+       return (sumArray1 / array1.length) > (sumArray2 / array2.length); // returns true if average of array1 is greater than array2
 
  }
 
@@ -146,7 +146,7 @@ iii. Show that using the index values for the elements is dynamic (works for arr
 c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.*/
 		
 /*-------------------------ages array----------------------------*/
-		   System.out.println("1a.)ages array: ");
+System.out.println("1a. )ages array: ");
 		   
 //1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 	int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
@@ -169,12 +169,12 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
 	System.out.println("    elements in array: " + ages.length);
 	                 	 
 /*-------------------------ages2 array----------------------------*/
-	System.out.println("1b.) ages2 array: ");
+System.out.println("1b. )ages2 array: ");
 			   
-	 // b. Create a new array of int called ages2 with 9 elements
-	 int[] ages2 ={15, 723, 4, 250, 98, 45, 0, 333, 5000};
+// b. Create a new array of int called ages2 with 9 elements
+	int[] ages2 ={15, 723, 4, 250, 98, 45, 0, 333, 5000};
 			   
-			      
+	// loop to print first and last element	      
 	for (int i = 0; i < ages2.length; i++) {// for loop - interate by 1 if i is less than length of array(9 elements)
 	if (i == 0) {   // if i equals position 0 then change variable firstElementinArray to that value
 	System.out.println("    first element: " + (ages2[i]));
@@ -191,30 +191,8 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
 	//Method: using method subtractFirstAndLastElementinArray   
 	System.out.println("    last element - first element = " + subtractFirstAndLastElementInArray(ages2));	   
 	System.out.println("    elements in array: " + ages2.length);
-				   	
-				   	
-		 /*
-		 * 2. Create an array of String called names that contains the following values:
-		 * “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
-		 * 
-		 * a. Use a loop to iterate through the array and calculate the average number
-		 * of letters per name. Print the result to the console.
-		 * 
-		 * b. Use a loop to iterate through the array again and concatenate all the
-		 * names together, separated by spaces, and print the result to the console.
-		 * 
-		 * 3. How do you access the last element of any array?
-		 *    create a for loop for (int i = 0; i < ages2.length; i++) to interate through the array. In the body of array use  if (i == ages2.length -1) to say if i equals length of array -1.
-		 *    if length of array is 9 then - 1 would be last position at 8 of array.
-		 *     
-		 * 4. How do you access the first element of any array?
-		 * 	 create a for loop for (int i = 0; i < ages2.length; i++) to interate through the array. In the body of array use  if (i == 0) 
-		 *   to say if i equals 0 then position 0 of array.
-		 *    
-		 */
-		    	
 		  
-//2. Create an array of String called names that contains the following values:
+/*2. Create an array of String called names that contains the following values: “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”. */
         String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
           
         //Method sum string lengths in string array:
@@ -222,22 +200,30 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
 
         //a. Use a loop to iterate through the array and calculate the average number
         double nameLengthTotal = 0; //double for average. created double variable to hold the value of the sum of the name lengths 
-        for(String name : names) {  // loops for each object in array names(6 objects)
-        	  nameLengthTotal += name.length();// on each iteration += adds the length of each name to the nameLenghtTotal variable  
-              }
+        for(String name : names) {  // enhanced loop - loops for each object in array names(6 objects)
+            nameLengthTotal += name.length();// on each iteration += adds the length of each name to the nameLenghtTotal variable  
+        }
 
-          System.out.println("2a.)average number of letters per name: "+ nameLengthTotal + "/" + names.length + " = " + nameLengthTotal / names.length);
+        System.out.println("2a.)average number of letters per name: "+ nameLengthTotal + "/" + names.length + " = " + nameLengthTotal / names.length);
 				  
        //b. Use a loop to iterate through the array again and concatenate all the
-         String concatNames = " ";
+        String concatNames = " ";
         for(String name : names) {  // loops for each object in array names(6 objects)
-         concatNames += name + " "; // on each iteration += adds the length of each name to the nameLenghtTotal variable  
+            concatNames += name + " "; // on each iteration += adds the length of each name to the nameLenghtTotal variable  
          }
          System.out.println("2b.) loop and concat names with space: " + concatNames);
          
+         
+/*3. How do you access the last element of any array?
+	      create a for loop for (int i = 0; i < ages2.length; i++) to interate through the array. In the body of array use  if (i == ages2.length -1) to say if i equals length of array -1.
+	      if length of array is 9 then - 1 would be last position at 8 of array.*/
+         
+/* 4. How do you access the first element of any array?
+	 	  create a for loop for (int i = 0; i < ages2.length; i++) to interate through the array. In the body of array use  if (i == 0) 
+	      to say if i equals 0 then position 0 of array.*/
            
 	 
- /* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array 
+/* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array 
        and add the length of each name to the nameLengths array.*/
           
         System.out.println("5.) nameLengths array: "); 
@@ -245,7 +231,7 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
         int[] nameLengths = new int[names.length]; //new int array
          
         for(int i = 0; i < names.length; i++ ) {// iterate by 1 if i < length of names array (6 objects)
-        nameLengths[i] = names[i].length(); // on each loop nameLength is filled with value of the name length in names array
+            nameLengths[i] = names[i].length(); // on each loop nameLength is filled with value of the name length in names array
         }                                   // nameLengths[i] = names[i].length(); for example - on loop 3 is nameLengths[2] =  names[2].length();
                                             // nameLength(2) at position 2 of array is filled with name length of position 2 of names array
          //Check values in nameLengths array
@@ -260,9 +246,9 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
 /* 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
      Print the result to the console.*/
          
-        int nameLengthSum = 0;
-	for (int i = 0; i < nameLengths.length; i++) {
-	nameLengthSum += nameLengths[i];
+    int nameLengthSum = 0;                        // created variable to hold the total of the elements in nameLenghts array created in question 5
+	for (int i = 0; i < nameLengths.length; i++) {// for loop to iterate by 1 over the nameLengths array. Exit condition: if i < than the length of array(6 Elements)
+	     nameLengthSum += nameLengths[i];
 		 }
 	System.out.println("6.) Sum of all elements in nameLengths array: " + nameLengthSum);
 				
@@ -283,41 +269,47 @@ c. Use a loop to iterate through the array and calculate the average age. Print 
 		 
 	 
 /* 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.*/
+	//created method sumValuesInIntArray() to sum values in array with a data type of int
+	//created method to sum the ifSumOfArrayGreaterThan100()
        
-        int arrayOfInt[] = {34, 2, 37, 1, 9, 12, -16, 23, 17};
+    int arrayOfInt[] = {34, 2, 37, 1, 9, 12, -16, 23, 17}; //when methods are called pass in array to method parameters
 
-        System.out.println("9.) return boolean if arrayOfInt total " + sumValuesInIntArray(arrayOfInt) + " > 100: " + ifSumOfArrayGreaterThan100(arrayOfInt)); 
+    System.out.println("9.) return boolean if arrayOfInt total " + sumValuesInIntArray(arrayOfInt) + " > 100: " + ifSumOfArrayGreaterThan100(arrayOfInt)); 
          
          
 		  
- /* 10. Write a method that takes an array of double and returns the average of all the elements in the array.*/
-         double prices[] = {18.19, 25.02, 12.95, 9.99, 32.99, 14.99, 45.99, 36.42};
+/* 10. Write a method that takes an array of double and returns the average of all the elements in the array.*/
+      // created method sumValuesInDoubleArray() to sum values in array with a data type of double
+      // created method averageOfAllElementsInArray() to average the values in an array 
+     double prices[] = {18.19, 25.02, 12.95, 9.99, 32.99, 14.99, 45.99, 36.42}; // when methods are called pass in array to method parameters
          
-         System.out.println("10.) total of prices[] = " + sumValuesInDoubleArray(prices) + " and prices[] length = " + prices.length + ": average of prices = " + averageOfAllElementsInArray(prices));
+     System.out.println("10.) total of prices[] = " + sumValuesInDoubleArray(prices) + " and prices[] length = " + prices.length + ": average of prices = " + averageOfAllElementsInArray(prices));
 
- /*11. Write a method that takes two arrays of double and returns true if the average of the elements 
-      in the first array is greater than the average of the elements in the second array. */      
-         double prices2[] = {86.10, 10.99,5.99, 22.11, 70.02};
+/*11. Write a method that takes two arrays of double and returns true if the average of the elements 
+      in the first array is greater than the average of the elements in the second array. */  
+     //created method averageOfAllElementsInArray() to average the elements in a number based array
+     //created method isAverageOf1stArrayGreaterThan2ndArray() to see if average of array1 > array2
+     double prices2[] = {86.10, 10.99,5.99, 22.11, 70.02}; //when methods are called pass in array to method parameters
          
-         System.out.println("11.) average of prices[] = " +  averageOfAllElementsInArray(prices) + " and average of prices2[] = " +  averageOfAllElementsInArray(prices2) + ". Is prices > prices 2: " + isAverageOf1stArrayGreaterThan2ndArray(prices,prices2)); 
+     System.out.println("11.) average of prices[] = " +  averageOfAllElementsInArray(prices) + " and average of prices2[] = " +  averageOfAllElementsInArray(prices2) + ". Is prices > prices 2: " + isAverageOf1stArrayGreaterThan2ndArray(prices,prices2)); 
  
          
- /* 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and  a double moneyInPocket, and returns 
-          true if it is hot outside and if moneyInPocket is greater than 10.50.*/
-         boolean isHotOutside = true;
-         double moneyInPocket = 15.00;
+/* 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and  a double moneyInPocket, and returns 
+       true if it is hot outside and if moneyInPocket is greater than 10.50.*/
+      // created method willBuyDrink() to check if boolean is true and double variable is greater than 10.50
+      boolean isHotOutside = true;// variables to be passed to method parameter
+      double moneyInPocket = 15.00;// variables to be passed to method parameter
            
-         System.out.println("12.) " + willBuyDrink(isHotOutside,moneyInPocket));
-         
- 
-         
+      System.out.println("12.) " + willBuyDrink(isHotOutside,moneyInPocket));
+                  
 
 /* 13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.*/
           
-        //Method to check if today is Thursday and print messaging saying if I have class today or not.          
-        LocalDate today = LocalDate.now();                   // uses LocalDate data type and .now() method to get todays date
-        DayOfWeek dayOfWeek = today.getDayOfWeek();          // uses DayOfWeek data type and method .getDayOfWeek() from today variable
-        isItClassDay(dayOfWeek);// Call method and passing in dayOfWeek variable to method
+       //Method to check if today is Thursday and print messaging saying if I have class today or not.
+       //Imported LocalDate and DayOfWeek classes
+       LocalDate today = LocalDate.now();                   // uses LocalDate class data type and .now() method to get todays date
+       DayOfWeek dayOfWeek = today.getDayOfWeek();          // uses DayOfWeek data type and method .getDayOfWeek() from today variable
+       isItClassDay(dayOfWeek);// Call method and passing in dayOfWeek variable to method
    
    			
 	}
